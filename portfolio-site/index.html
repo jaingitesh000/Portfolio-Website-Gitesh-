@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Gitesh Jain — Product Designer</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/custom.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+<script defer src="assets/quest/student-portal-animation.js"></script>
+<script defer src="assets/quest/mobile-screens-animation.js"></script>
+<script defer src="assets/quest/thumbnail-cover-animation.js"></script>
+<script defer src="assets/quest/teach-thumbnail-animation.js"></script>
+<script defer src="assets/quest/teacher-case-cover-animation.js"></script>
+</head>
+<body class="bg-[#FAF9F6] font-sans text-[#111111] antialiased selection:bg-[#111111] selection:text-[#FAF9F6] overflow-x-hidden">
+
+<!-- ============ SHARED NAVIGATION HEADER ============ -->
+<header class="site-header fixed z-50">
+  <div class="site-nav-shell">
+    <div class="site-nav-pill site-nav-pill--primary">
+      <a class="group focus:outline-none" href="#/home" data-nav="home">
+        <span class="site-nav-avatar-frame">
+          <img class="site-nav-avatar" src="assets/gitesh-nav-avatar.png" alt="Gitesh Jain" width="42" height="42">
+        </span>
+      </a>
+      <nav class="hidden md:flex items-center gap-1 text-[13px] font-mono">
+        <a class="nav-link site-nav-link" href="#/home/work" data-nav="home" data-scroll="work">Case Studies</a>
+        <a class="nav-link site-nav-link" href="#/home/artifacts" data-nav="home" data-scroll="artifacts">Selected UI Work</a>
+        <a class="nav-link site-nav-link" href="#/home/about" data-nav="home" data-scroll="about">About</a>
+      </nav>
+    </div>
+    <a class="contact-button contact-button--resume" href="https://drive.google.com/file/d/1ccMt1DtWhEKsMcsG1X8I08Gz0yHouZzh/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Open resume">
+      <span class="contact-button__label">
+        <span class="contact-button__fill" aria-hidden="true"></span>
+        <span class="contact-button__text text-">Resume</span>
+      </span>
+      <span class="contact-button__arrow" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7 17L17 7M9 7H17V15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+    </a>
+  </div>
+</header>
+
+<nav class="case-back-nav" id="case-back-nav" aria-label="Case study navigation">
+  <a class="case-back-button" href="#/home/work" data-nav="home" data-scroll="work">
+    <svg aria-hidden="true" fill="none" height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
+      <path d="M9 7L4 12L9 17" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/>
+      <path d="M4 12H15.5C18.5376 12 21 9.53757 21 6.5V5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/>
+    </svg>
+    <span>Back</span>
+  </a>
+</nav>
+
+<main class="w-full bg-[#FAF9F6]">
+
+  <!-- =======================================================
+       VIEW 1: HOMEPAGE
+  ======================================================= -->
+  <div id="view-home" class="view">
+
+    <!-- SECTION 1: HERO -->
+    <section class="hero-ripple-section w-full min-h-[75vh] flex flex-col justify-center items-center pt-24 pb-20 md:pt-36 md:pb-28 px-6 md:px-12 relative overflow-hidden border-b border-[#E5E5DF]/70">
+      <div class="hero-ripple-grid" id="hero-ripple-grid" aria-hidden="true"></div>
+      <div class="max-w-[1240px] w-full mx-auto relative z-10 flex flex-col items-center text-center">
+        <div class="hero-status-badge inline-flex items-center gap-3 mb-10">
+          <span class="hero-status-dot" aria-hidden="true"></span>
+          <span class="font-mono text-[12px] font-bold tracking-wide uppercase text-[#111111]">
+            Open to new opportunities
+          </span>
+        </div>
+        <h1 class="font-display text-[34px] sm:text-[46px] md:text-[56px] lg:text-[62px] font-bold text-[#111111] tracking-[-0.035em] leading-[1.14] max-w-[1040px]">
+          I'm Gitesh! I believe great design is not just about visuals it's about clarity, usability, and creating products people love to use.
+        </h1>
+      </div>
+    </section>
+
+    <!-- SECTION 2: WORK -->
+    <section class="w-full py-20 md:py-28 px-6 md:px-12" id="work">
+      <div class="max-w-[1360px] mx-auto">
+        <div class="mb-16 max-w-[840px] mx-auto text-center">
+          <h2 class="font-display text-3xl md:text-4xl font-bold text-[#111111] tracking-tight">Case Studies</h2>
+        </div>
+
+        <div class="flex flex-col items-center gap-12 md:gap-16 max-w-[840px] mx-auto w-full">
+
+          <!-- CARD 1: Quest+ (opens case study view) -->
+          <a href="projects/quest-plus.html" class="comet-card group relative bg-white text-[#111111] rounded-[36px] p-6 sm:p-9 md:p-10 border border-[#E5E5DF] shadow-[0_4px_30px_rgba(0,0,0,0.03)] cursor-pointer w-full block">
+            <div class="rounded-[26px] overflow-hidden bg-[#F0F0EE] aspect-[16/9] relative mb-7 border border-black/[0.04]">
+              <div id="quest-thumbnail-animation" class="quest-thumbnail-animation w-full h-full transition-transform duration-700 ease-out group-hover:scale-[1.03]" role="img" aria-label="Animated Quest+ Learning Experience Redesign preview"></div>
+            </div>
+            <div class="flex items-center justify-between mb-3">
+              <!--<span class="font-mono text-[11px] tracking-wider uppercase text-[#8E8E8A]">Case Study // 01</span>-->
+              <!--<span class="font-mono text-[11px] text-[#111111] font-medium bg-black/[0.04] px-2.5 py-1 rounded-full">EdTech • Gamification</span>-->
+            </div>
+            <h3 class="font-display text-[22px] sm:text-[26px] font-bold text-[#111111] tracking-tight leading-snug mb-3">
+              Quest+ Learning Experience Redesign
+            </h3>
+            <p class="text-[#686866] text-[14px] sm:text-[15px] leading-relaxed">
+              Revamped the Quest+ learning platform to improve student engagement, simplify navigation, and create a clearer learning experience. The redesign focused on usability, progress tracking, and assessment feedback, leading to higher engagement and a stronger foundation for future gamification features.
+            </p>
+          </a>
+
+          <!-- CARD 2: Teach Portal & Mobile App -->
+          <a href="projects/teacher-tools.html" class="comet-card group relative bg-white text-[#111111] rounded-[36px] p-6 sm:p-9 md:p-10 border border-[#E5E5DF] shadow-[0_4px_30px_rgba(0,0,0,0.03)] cursor-pointer w-full block">
+            <div class="rounded-[26px] overflow-hidden bg-[#F0F0EE] aspect-[16/9] relative mb-7 border border-black/[0.04]">
+              <div id="teach-thumbnail-animation" class="teach-thumbnail-animation w-full h-full transition-transform duration-700 ease-out group-hover:scale-[1.03]" role="img" aria-label="Animated Teach Portal and Mobile App Classroom Management Experience preview"></div>
+            </div>
+            <div class="flex items-center justify-between mb-3">
+              <!--<span class="font-mono text-[11px] tracking-wider uppercase text-[#8E8E8A]">Case Study // 02</span>-->
+              <!--<span class="font-mono text-[11px] text-[#111111] font-medium bg-black/[0.04] px-2.5 py-1 rounded-full">Teacher Tools • Operations</span>-->
+            </div>
+            <h3 class="font-display text-[22px] sm:text-[26px] font-bold text-[#111111] tracking-tight leading-snug mb-3">
+              Teach Portal &amp; Mobile App — Classroom Management Experience
+            </h3>
+            <p class="text-[#686866] text-[14px] sm:text-[15px] leading-relaxed">
+              Redesigned the Teach Portal and Mobile App to streamline classroom management, simplify assessment workflows, and improve communication between teachers and students. The platform focused on reducing operational friction for educators while creating a more structured and accessible learning experience across web and mobile devices.
+            </p>
+          </a>
+
+          <!-- CARD 3: Group Masterclass Fluent Life -->
+          <a href="projects/group-masterclass.html" class="comet-card group relative bg-white text-[#111111] rounded-[36px] p-6 sm:p-9 md:p-10 border border-[#E5E5DF] shadow-[0_4px_30px_rgba(0,0,0,0.03)] cursor-pointer w-full block">
+            <div class="rounded-[26px] overflow-hidden bg-[#F0F0EE] aspect-[16/9] relative mb-7 border border-black/[0.04]">
+              <img class="work-preview-image w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]" alt="Fluent Life Group Masterclass Learning Community Experience user interface showcase" src="assets/fluent-life-masterclass.jpg">
+            </div>
+            <div class="flex items-center justify-between mb-3">
+              <!--<span class="font-mono text-[11px] tracking-wider uppercase text-[#8E8E8A]">Case Study // 03</span>-->
+              <!--<span class="font-mono text-[11px] text-[#111111] font-medium bg-black/[0.04] px-2.5 py-1 rounded-full">Community • Live Cohorts</span>-->
+            </div>
+            <h3 class="font-display text-[22px] sm:text-[26px] font-bold text-[#111111] tracking-tight leading-snug mb-3">
+              Group Masterclass (Fluent Life) — Learning Community Experience
+            </h3>
+            <p class="text-[#686866] text-[14px] sm:text-[15px] leading-relaxed">
+              Designed the Group Masterclass experience for Fluent Life to create a more interactive, structured, and engaging learning environment for users participating in cohort-based programs. The platform focused on improving learner participation, community interaction, session accessibility, and overall learning consistency across the masterclass journey.
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: ARTIFACTS CAROUSEL -->
+    <section class="w-full bg-[#F4F3EE] border-y border-[#E5E5DF] overflow-hidden py-20" id="artifacts">
+      <div class="max-w-[1360px] mx-auto px-6 md:px-12 mb-8">
+        <div class="text-center">
+          <h2 class="font-display text-2xl sm:text-3xl font-bold text-[#111111] tracking-tight">Selected UI Work</h2>
+        </div>
+      </div>
+
+      <div class="relative w-full overflow-hidden">
+        <div class="pointer-events-none absolute inset-y-0 left-0 w-24 sm:w-40 bg-gradient-to-r from-[#F4F3EE] via-[#F4F3EE]/80 to-transparent z-10 backdrop-blur-[1px]"></div>
+        <div class="pointer-events-none absolute inset-y-0 right-0 w-24 sm:w-40 bg-gradient-to-l from-[#F4F3EE] via-[#F4F3EE]/80 to-transparent z-10 backdrop-blur-[1px]"></div>
+
+        <div class="space-y-6 py-2">
+          <div class="artifact-marquee artifact-marquee--left select-none" aria-label="Artifact carousel moving right to left">
+            <div class="artifact-card w-[85vw] sm:w-[440px] md:w-[460px] shrink-0 snap-start bg-white rounded-2xl p-6 border border-[#E5E5DF] shadow-[0_4px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_16px_40px_rgba(0,0,0,0.06)] flex flex-col justify-between group hover:border-[#111111] transition-all duration-300">
+              <div>
+                <div class="flex items-center justify-between pb-3 border-b border-black/[0.06] mb-4 font-mono">
+                  <div class="flex items-center gap-2.5">
+                    <span class="w-2.5 h-2.5 rounded-full bg-[#111111]"></span>
+                    <span class="text-xs uppercase tracking-wider font-semibold text-[#111111]">Artifact 01 // Token Matrix &amp; Switchboard</span>
+                  </div>
+                  <span class="text-[10px] text-[#8E8E8A] bg-black/[0.03] px-2.5 py-0.5 rounded-full font-semibold">DESIGN SYSTEM</span>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div class="p-4 rounded-xl bg-[#FAF9F6] border border-black/[0.04] space-y-3">
+                    <span class="font-mono text-[10px] text-[#8E8E8A] uppercase tracking-wider block">Optical Scale</span>
+                    <div class="space-y-1.5">
+                      <div class="flex items-baseline justify-between"><span class="font-display text-xl font-bold">Display XL</span><span class="font-mono text-[10px] text-[#686866]">62px / -0.035em</span></div>
+                      <div class="flex items-baseline justify-between border-t border-black/[0.04] pt-1"><span class="font-display text-sm font-semibold">Headline MD</span><span class="font-mono text-[10px] text-[#686866]">24px / -0.02em</span></div>
+                      <div class="flex items-baseline justify-between border-t border-black/[0.04] pt-1"><span class="font-mono text-xs">Monospace</span><span class="font-mono text-[10px] text-[#686866]">13px / +0.02em</span></div>
+                    </div>
+                  </div>
+                  <div class="p-4 rounded-xl bg-[#FAF9F6] border border-black/[0.04] space-y-2.5">
+                    <span class="font-mono text-[10px] text-[#8E8E8A] uppercase tracking-wider block">Tokens</span>
+                    <div class="space-y-1.5">
+                      <div class="flex items-center justify-between p-2 bg-white rounded-lg border border-black/[0.04]"><div class="flex items-center gap-2"><div class="w-4 h-4 rounded bg-[#E63C1E]"></div><span class="font-mono text-[11px] font-semibold">accent.brand</span></div><span class="font-mono text-[10px] text-[#686866]">#E63C1E</span></div>
+                      <div class="flex items-center justify-between p-2 bg-white rounded-lg border border-black/[0.04]"><div class="flex items-center gap-2"><div class="w-4 h-4 rounded bg-[#C084FC]"></div><span class="font-mono text-[11px] font-semibold">violet.spectrum</span></div><span class="font-mono text-[10px] text-[#686866]">#C084FC</span></div>
+                      <div class="flex items-center justify-between p-2 bg-white rounded-lg border border-black/[0.04]"><div class="flex items-center gap-2"><div class="w-4 h-4 rounded bg-[#111111]"></div><span class="font-mono text-[11px] font-semibold">surface.deep</span></div><span class="font-mono text-[10px] text-[#686866]">#111111</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-4 p-3 rounded-xl bg-black/[0.02] border border-black/[0.04] flex items-center justify-between">
+                  <div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-[#111111]">tune</span><span class="font-mono text-xs text-[#111111] font-medium">Figma Hierarchy &amp; Layout Presets</span></div>
+                  <span class="font-mono text-[10px] font-semibold text-[#E63C1E]">v3.4 Production</span>
+                </div>
+              </div>
+              <div class="flex items-center justify-between pt-3 mt-5 border-t border-black/[0.05] font-mono text-xs text-[#686866]">
+                <span>Modular Design System</span>
+                <span class="text-[#111111] font-semibold group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Inspect Architecture ⟶</span>
+              </div>
+            </div>
+
+            <div class="artifact-card w-[85vw] sm:w-[440px] md:w-[460px] shrink-0 snap-start bg-white rounded-2xl p-6 border border-[#E5E5DF] shadow-[0_4px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_16px_40px_rgba(0,0,0,0.06)] flex flex-col justify-between group hover:border-[#111111] transition-all duration-300">
+              <div>
+                <div class="flex items-center justify-between pb-3 border-b border-black/[0.06] mb-4 font-mono">
+                  <div class="flex items-center gap-2.5">
+                    <span class="w-2.5 h-2.5 rounded-full bg-[#E63C1E]"></span>
+                    <span class="text-xs uppercase tracking-wider font-semibold text-[#111111]">Artifact 02 // Cohort Telemetry Engine</span>
+                  </div>
+                  <div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span><span class="text-[10px] text-[#111111] font-medium bg-black/[0.03] px-2.5 py-0.5 rounded-full">REAL-TIME</span></div>
+                </div>
+                <div class="grid grid-cols-3 gap-3 mb-4">
+                  <div class="p-3 rounded-xl bg-[#FAF9F6] border border-black/[0.04]"><span class="font-mono text-[10px] text-[#8E8E8A] uppercase">Retention</span><div class="font-display text-xl font-bold text-[#111111] mt-0.5">+28.4%</div><span class="font-mono text-[9px] text-emerald-600 font-semibold">↑ 4.2%</span></div>
+                  <div class="p-3 rounded-xl bg-[#FAF9F6] border border-black/[0.04]"><span class="font-mono text-[10px] text-[#8E8E8A] uppercase">Learners</span><div class="font-display text-xl font-bold text-[#111111] mt-0.5">14,820</div><span class="font-mono text-[9px] text-[#686866]">32 Cohorts</span></div>
+                  <div class="p-3 rounded-xl bg-[#FAF9F6] border border-black/[0.04]"><span class="font-mono text-[10px] text-[#8E8E8A] uppercase">Velocity</span><div class="font-display text-xl font-bold text-[#111111] mt-0.5">1.8 min</div><span class="font-mono text-[9px] text-emerald-600 font-semibold">-42s drop</span></div>
+                </div>
+                <div class="w-full h-24 bg-[#FAF9F6] rounded-xl p-3 border border-black/[0.04] relative overflow-hidden flex flex-col justify-between">
+                  <div class="flex justify-between font-mono text-[10px] text-[#8E8E8A]"><span>Retention Momentum Curve</span><span class="text-[#111111] font-medium">0.94 Alpha</span></div>
+                  <div class="w-full h-12 relative">
+                    <svg class="w-full h-full overflow-visible" preserveAspectRatio="none" viewBox="0 0 500 100">
+                      <line stroke="#E5E5DF" stroke-dasharray="3 3" x1="0" x2="500" y1="25" y2="25"></line>
+                      <line stroke="#E5E5DF" stroke-dasharray="3 3" x1="0" x2="500" y1="75" y2="75"></line>
+                      <path d="M0,85 C60,78 120,40 180,50 C240,60 300,18 360,28 C420,38 460,8 500,6 L500,100 L0,100 Z" fill="rgba(17,17,17,0.06)"></path>
+                      <path d="M0,85 C60,78 120,40 180,50 C240,60 300,18 360,28 C420,38 460,8 500,6" fill="none" stroke="#111111" stroke-linecap="round" stroke-width="2.5"></path>
+                      <circle cx="500" cy="6" fill="#E63C1E" r="3.5"></circle>
+                    </svg>
+                  </div>
+                  <div class="flex justify-between font-mono text-[9px] text-[#8E8E8A]"><span>Week 01</span><span>Week 04</span><span>Graduation 89.2%</span></div>
+                </div>
+              </div>
+              <div class="flex items-center justify-between pt-3 mt-5 border-t border-black/[0.05] font-mono text-xs text-[#686866]">
+                <span>Mixpanel &amp; PostHog Behavioral Model</span>
+                <span class="text-[#111111] font-semibold group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Read Audit ⟶</span>
+              </div>
+            </div>
+
+            <div class="artifact-card w-[85vw] sm:w-[440px] md:w-[460px] shrink-0 snap-start bg-white rounded-2xl p-6 border border-[#E5E5DF] shadow-[0_4px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_16px_40px_rgba(0,0,0,0.06)] flex flex-col justify-between group hover:border-[#111111] transition-all duration-300">
+              <div>
+                <div class="flex items-center justify-between pb-3 border-b border-black/[0.06] mb-4 font-mono">
+                  <div class="flex items-center gap-2.5">
+                    <span class="w-2.5 h-2.5 rounded-full bg-[#C084FC]"></span>
+                    <span class="text-xs uppercase tracking-wider font-semibold text-[#111111]">Artifact 03 // Real-Time WebRTC Stage</span>
+                  </div>
+                  <span class="text-[10px] text-[#8E8E8A] bg-black/[0.03] px-2.5 py-0.5 rounded-full font-mono">LATENCY: 22ms</span>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-3">
+                  <div class="sm:col-span-2 bg-[#1A1A1E] rounded-xl p-4 text-white flex flex-col justify-between h-36 relative overflow-hidden">
+                    <div class="flex items-center justify-between z-10"><div class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse"></span><span class="font-mono text-[10px] text-neutral-300">Masterclass Stage</span></div><span class="font-mono text-[9px] bg-white/10 px-1.5 py-0.5 rounded text-neutral-300">60FPS</span></div>
+                    <div class="text-center my-auto z-10"><span class="material-symbols-outlined text-[28px] text-white/40 block mb-0.5">dashboard_customize</span><p class="font-mono text-[11px] text-neutral-300">Shared Interactive Canvas</p></div>
+                    <div class="flex items-center justify-between z-10 pt-1.5 border-t border-white/10"><div class="flex -space-x-1 font-mono text-[9px]"><div class="w-5 h-5 rounded-full bg-white text-black flex items-center justify-center font-bold">GJ</div><div class="w-5 h-5 rounded-full bg-[#C084FC] text-black flex items-center justify-center font-bold">AK</div><div class="w-5 h-5 rounded-full bg-neutral-700 text-white flex items-center justify-center font-bold">+18</div></div><span class="font-mono text-[9px] text-emerald-400">Spatial Audio</span></div>
+                  </div>
+                  <div class="space-y-2.5">
+                    <div class="bg-[#FAF9F6] p-3 rounded-xl border border-black/[0.04]"><span class="font-mono text-[9px] text-[#8E8E8A] uppercase block mb-1.5">Audio Wave</span><div class="flex items-center justify-between gap-1 h-6"><div class="w-1 bg-[#111111] h-2 rounded-full"></div><div class="w-1 bg-[#111111] h-4 rounded-full"></div><div class="w-1 bg-[#111111] h-6 rounded-full"></div><div class="w-1 bg-[#E63C1E] h-3.5 rounded-full"></div><div class="w-1 bg-[#111111] h-5 rounded-full"></div><div class="w-1 bg-[#111111] h-3 rounded-full"></div><div class="w-1 bg-[#111111] h-1.5 rounded-full"></div></div></div>
+                    <div class="bg-[#FAF9F6] p-3 rounded-xl border border-black/[0.04]"><span class="font-mono text-[9px] text-[#8E8E8A] uppercase block">Spotlight</span><div class="flex items-center justify-between mt-1"><span class="font-mono text-[11px] font-semibold">Teacher Active</span><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span></div></div>
+                  </div>
+                </div>
+                <div class="p-2.5 bg-black/[0.02] rounded-xl border border-black/[0.04] flex items-center justify-between font-mono text-xs"><span class="text-[#686866] text-[11px]">Web Audio API integration</span><span class="text-[#111111] font-medium text-[11px]">Mesh Protocol</span></div>
+              </div>
+              <div class="flex items-center justify-between pt-3 mt-5 border-t border-black/[0.05] font-mono text-xs text-[#686866]">
+                <span>WebRTC Architecture</span>
+                <span class="text-[#111111] font-semibold group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">View Schematics ⟶</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="artifact-marquee artifact-marquee--right select-none" aria-label="Artifact carousel moving left to right">
+            <div class="artifact-card w-[85vw] sm:w-[440px] md:w-[460px] shrink-0 snap-start bg-white rounded-2xl p-6 border border-[#E5E5DF] shadow-[0_4px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_16px_40px_rgba(0,0,0,0.06)] flex flex-col justify-between group hover:border-[#111111] transition-all duration-300">
+              <div>
+                <div class="flex items-center justify-between pb-3 border-b border-black/[0.06] mb-4 font-mono">
+                  <div class="flex items-center gap-2.5">
+                    <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+                    <span class="text-xs uppercase tracking-wider font-semibold text-[#111111]">Artifact 04 // Gamification &amp; Badge Vault</span>
+                  </div>
+                  <span class="text-[10px] text-[#8E8E8A] bg-black/[0.03] px-2.5 py-0.5 rounded-full font-mono">TIER 03 UNLOCKED</span>
+                </div>
+                <div class="grid grid-cols-4 gap-2 mb-4">
+                  <div class="p-3 rounded-xl bg-[#FAF9F6] border border-black/[0.04] flex flex-col items-center justify-center text-center"><div class="w-10 h-10 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-center text-lg mb-1 shadow-sm">🏆</div><span class="font-mono text-[11px] font-bold text-[#111111]">Honor Roll</span><span class="font-mono text-[9px] text-[#8E8E8A]">Top 1%</span></div>
+                  <div class="p-3 rounded-xl bg-[#FAF9F6] border border-black/[0.04] flex flex-col items-center justify-center text-center"><div class="w-10 h-10 rounded-xl bg-orange-50 border border-orange-200 flex items-center justify-center text-lg mb-1 shadow-sm">🔥</div><span class="font-mono text-[11px] font-bold text-[#111111]">30d Streak</span><span class="font-mono text-[9px] text-[#8E8E8A]">Continuous</span></div>
+                  <div class="p-3 rounded-xl bg-[#FAF9F6] border border-black/[0.04] flex flex-col items-center justify-center text-center"><div class="w-10 h-10 rounded-xl bg-purple-50 border border-purple-200 flex items-center justify-center text-lg mb-1 shadow-sm">⚡</div><span class="font-mono text-[11px] font-bold text-[#111111]">Sprint</span><span class="font-mono text-[9px] text-[#8E8E8A]">2.4x Speed</span></div>
+                  <div class="p-3 rounded-xl bg-[#FAF9F6] border border-black/[0.04] flex flex-col items-center justify-center text-center"><div class="w-10 h-10 rounded-xl bg-cyan-50 border border-cyan-200 flex items-center justify-center text-lg mb-1 shadow-sm">💎</div><span class="font-mono text-[11px] font-bold text-[#111111]">Leader</span><span class="font-mono text-[9px] text-[#8E8E8A]">Cohort #1</span></div>
+                </div>
+                <div class="p-3.5 rounded-xl bg-[#FAF9F6] border border-black/[0.04] space-y-2">
+                  <div class="flex items-center justify-between font-mono text-[11px]"><span class="text-[#8E8E8A] uppercase">Spring Physics</span><span class="text-[#111111] font-semibold">tension: 180, friction: 12</span></div>
+                  <div class="flex items-center justify-between p-2 bg-white rounded-lg border border-black/[0.04] font-mono text-xs"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[15px] text-amber-600">stars</span><span class="text-[11px] font-semibold">Burst Physics</span></div><span class="text-emerald-600 text-[10px] font-semibold">Ready [60 FPS]</span></div>
+                </div>
+              </div>
+              <div class="flex items-center justify-between pt-3 mt-5 border-t border-black/[0.05] font-mono text-xs text-[#686866]">
+                <span>Reward Engine</span>
+                <span class="text-[#111111] font-semibold group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Explore Rewards ⟶</span>
+              </div>
+            </div>
+
+            <div class="artifact-card w-[85vw] sm:w-[440px] md:w-[460px] shrink-0 snap-start bg-white rounded-2xl p-6 border border-[#E5E5DF] shadow-[0_4px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_16px_40px_rgba(0,0,0,0.06)] flex flex-col justify-between group hover:border-[#111111] transition-all duration-300">
+              <div>
+                <div class="flex items-center justify-between pb-3 border-b border-black/[0.06] mb-4 font-mono">
+                  <div class="flex items-center gap-2.5">
+                    <span class="w-2.5 h-2.5 rounded-full bg-[#111111]"></span>
+                    <span class="text-xs uppercase tracking-wider font-semibold text-[#111111]">Artifact 05 // Adaptive Grid &amp; Viewport Matrix</span>
+                  </div>
+                  <span class="text-[10px] text-[#8E8E8A] bg-black/[0.03] px-2.5 py-0.5 rounded-full font-mono">FOUNDATION</span>
+                </div>
+                <div class="grid grid-cols-3 gap-3 mb-4">
+                  <div class="p-3 rounded-xl bg-[#FAF9F6] border border-black/[0.04]"><span class="font-mono text-[10px] text-[#8E8E8A] uppercase">Columns</span><div class="font-display text-xl font-bold text-[#111111] mt-0.5">12 Col</div><span class="font-mono text-[9px] text-[#686866]">Desktop Fluid</span></div>
+                  <div class="p-3 rounded-xl bg-[#FAF9F6] border border-black/[0.04]"><span class="font-mono text-[10px] text-[#8E8E8A] uppercase">Gutter</span><div class="font-display text-xl font-bold text-[#111111] mt-0.5">24px</div><span class="font-mono text-[9px] text-[#686866]">Rhythm Base</span></div>
+                  <div class="p-3 rounded-xl bg-[#FAF9F6] border border-black/[0.04]"><span class="font-mono text-[10px] text-[#8E8E8A] uppercase">Baseline</span><div class="font-display text-xl font-bold text-[#111111] mt-0.5">4pt</div><span class="font-mono text-[9px] text-emerald-600 font-semibold">Strict Ratio</span></div>
+                </div>
+                <div class="p-3.5 rounded-xl bg-[#FAF9F6] border border-black/[0.04] space-y-2">
+                  <div class="flex items-center justify-between font-mono text-[11px]"><span class="text-[#8E8E8A] uppercase">Breakpoints</span><span class="text-[#111111] font-semibold">360px · 768px · 1280px · 1920px</span></div>
+                  <div class="flex items-center justify-between p-2 bg-white rounded-lg border border-black/[0.04] font-mono text-xs"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[15px] text-[#111111]">aspect_ratio</span><span class="text-[11px] font-semibold">Responsive Canvas Engine</span></div><span class="text-emerald-600 text-[10px] font-semibold">Active sync</span></div>
+                </div>
+              </div>
+              <div class="flex items-center justify-between pt-3 mt-5 border-t border-black/[0.05] font-mono text-xs text-[#686866]">
+                <span>Grid System &amp; Primitives</span>
+                <span class="text-[#111111] font-semibold group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">View Spec ⟶</span>
+              </div>
+            </div>
+
+            <div class="artifact-card w-[85vw] sm:w-[440px] md:w-[460px] shrink-0 snap-start bg-white rounded-2xl p-6 border border-[#E5E5DF] shadow-[0_4px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_16px_40px_rgba(0,0,0,0.06)] flex flex-col justify-between group hover:border-[#111111] transition-all duration-300">
+              <div>
+                <div class="flex items-center justify-between pb-3 border-b border-black/[0.06] mb-4 font-mono">
+                  <div class="flex items-center gap-2.5">
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+                    <span class="text-xs uppercase tracking-wider font-semibold text-[#111111]">Artifact 06 // Interaction Physics &amp; Gestures</span>
+                  </div>
+                  <span class="text-[10px] text-[#8E8E8A] bg-black/[0.03] px-2.5 py-0.5 rounded-full font-mono">MICRO-ENGINE</span>
+                </div>
+                <div class="grid grid-cols-3 gap-3 mb-4">
+                  <div class="p-3 rounded-xl bg-[#FAF9F6] border border-black/[0.04]"><span class="font-mono text-[10px] text-[#8E8E8A] uppercase">Haptics</span><div class="font-display text-xl font-bold text-[#111111] mt-0.5">62Hz</div><span class="font-mono text-[9px] text-[#686866]">Transient Click</span></div>
+                  <div class="p-3 rounded-xl bg-[#FAF9F6] border border-black/[0.04]"><span class="font-mono text-[10px] text-[#8E8E8A] uppercase">Damping</span><div class="font-display text-xl font-bold text-[#111111] mt-0.5">0.82</div><span class="font-mono text-[9px] text-[#686866]">Critical Peak</span></div>
+                  <div class="p-3 rounded-xl bg-[#FAF9F6] border border-black/[0.04]"><span class="font-mono text-[10px] text-[#8E8E8A] uppercase">FPS Target</span><div class="font-display text-xl font-bold text-[#111111] mt-0.5">120hz</div><span class="font-mono text-[9px] text-emerald-600 font-semibold">Metal / ProMotion</span></div>
+                </div>
+                <div class="p-3.5 rounded-xl bg-[#FAF9F6] border border-black/[0.04] space-y-2">
+                  <div class="flex items-center justify-between font-mono text-[11px]"><span class="text-[#8E8E8A] uppercase">Kinetic Tuning</span><span class="text-[#111111] font-semibold">decay: 0.992, mass: 1.0</span></div>
+                  <div class="flex items-center justify-between p-2 bg-white rounded-lg border border-black/[0.04] font-mono text-xs"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[15px] text-emerald-600">speed</span><span class="text-[11px] font-semibold">Gesture Interpolation</span></div><span class="text-emerald-600 text-[10px] font-semibold">Active [0ms lag]</span></div>
+                </div>
+              </div>
+              <div class="flex items-center justify-between pt-3 mt-5 border-t border-black/[0.05] font-mono text-xs text-[#686866]">
+                <span>Physics Engine</span>
+                <span class="text-[#111111] font-semibold group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Test Mechanics ⟶</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: ABOUT -->
+    <section class="w-full bg-[#FAF9F6] border-b border-[#E5E5DF]/70 px-6 md:px-12 relative overflow-hidden py-20" id="about">
+      <div class="max-w-[1240px] mx-auto">
+        <div class="items-center gap-16 md:grid md:grid-cols-12">
+          <div class="md:col-span-5 flex justify-center md:justify-start mb-10 md:mb-0">
+            <div class="w-72 sm:w-80 md:w-[340px] aspect-square rounded-[24px] overflow-hidden border border-black/10 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.08)] transition-transform duration-500 hover:scale-[1.02] bg-[#F0F0EE]">
+              <img alt="Gitesh Jain portrait" class="about-portrait-image w-full h-full object-cover" src="assets/gitesh-about-portrait.jpeg">
+            </div>
+          </div>
+          <div class="md:col-span-7 flex flex-col justify-center space-y-6 text-left">
+            <div>
+              <h2 class="font-display text-4xl md:text-5xl font-bold tracking-tight text-[#E63C1E]">
+                Hi, I'm Gitesh
+              </h2>
+            </div>
+            <p class="about-description text-neutral-700 text-lg leading-relaxed">
+              I like designing products by asking why before figuring out how. My approach sits between product thinking and design — understanding the problem, challenging assumptions, simplifying complexity, and shaping experiences that are clear, useful, and scalable.
+            </p>
+            <p class="about-description text-neutral-500 text-base leading-relaxed">
+              When I’m not designing, I’m usually looking for a new place to eat, travelling somewhere new, or trying to cook something I probably saw online.
+            </p>
+            <div class="pt-2 flex flex-wrap items-center gap-3">
+              <button class="inline-flex items-center gap-3 px-5 py-3 rounded-full border border-[#E5E5DF] bg-white hover:bg-white hover:border-[#111111] shadow-sm transition-all duration-200 group cursor-pointer" id="copy-email-btn" type="button">
+                <svg class="copy-icon w-4 h-4 text-[#8E8E8A] group-hover:text-[#111111] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                </svg>
+                <span class="email-label font-mono text-[13px] font-medium text-[#111111] underline underline-offset-4 decoration-[#E5E5DF] group-hover:decoration-[#111111] transition-all">jaingitesh000@gmail.com</span>
+              </button>
+              <a class="about-icon-button" href="https://www.linkedin.com/in/gitesh-jain-6a40221b7/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" data-tooltip="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M10.6673 5.3335C11.7282 5.3335 12.7456 5.75492 13.4957 6.50507C14.2459 7.25521 14.6673 8.27263 14.6673 9.3335V14.0002H12.0007V9.3335C12.0007 8.97987 11.8602 8.64074 11.6101 8.39069C11.3601 8.14064 11.0209 8.00016 10.6673 8.00016C10.3137 8.00016 9.97456 8.14064 9.72451 8.39069C9.47446 8.64074 9.33398 8.97987 9.33398 9.3335V14.0002H6.66732V9.3335C6.66732 8.27263 7.08875 7.25521 7.83889 6.50507C8.58904 5.75492 9.60645 5.3335 10.6673 5.3335Z" fill="black"/>
+                  <path d="M4.00065 6.00016H1.33398V14.0002H4.00065V6.00016Z" fill="black"/>
+                  <path d="M2.66732 4.00016C3.4037 4.00016 4.00065 3.40321 4.00065 2.66683C4.00065 1.93045 3.4037 1.3335 2.66732 1.3335C1.93094 1.3335 1.33398 1.93045 1.33398 2.66683C1.33398 3.40321 1.93094 4.00016 2.66732 4.00016Z" fill="black"/>
+                  <path d="M10.6673 5.3335C11.7282 5.3335 12.7456 5.75492 13.4957 6.50507C14.2459 7.25521 14.6673 8.27263 14.6673 9.3335V14.0002H12.0007V9.3335C12.0007 8.97987 11.8602 8.64074 11.6101 8.39069C11.3601 8.14064 11.0209 8.00016 10.6673 8.00016C10.3137 8.00016 9.97456 8.14064 9.72451 8.39069C9.47446 8.64074 9.33398 8.97987 9.33398 9.3335V14.0002H6.66732V9.3335C6.66732 8.27263 7.08875 7.25521 7.83889 6.50507C8.58904 5.75492 9.60645 5.3335 10.6673 5.3335Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M4.00065 6.00016H1.33398V14.0002H4.00065V6.00016Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M2.66732 4.00016C3.4037 4.00016 4.00065 3.40321 4.00065 2.66683C4.00065 1.93045 3.4037 1.3335 2.66732 1.3335C1.93094 1.3335 1.33398 1.93045 1.33398 2.66683C1.33398 3.40321 1.93094 4.00016 2.66732 4.00016Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="about-tooltip" role="tooltip"><strong>LinkedIn</strong><span>View profile</span><i class="about-tooltip-line about-tooltip-line--green"></i><i class="about-tooltip-line about-tooltip-line--blue"></i></span>
+              </a>
+              <a class="about-icon-button" href="https://medium.com/@jaingitesh000" target="_blank" rel="noopener noreferrer" aria-label="Medium profile" data-tooltip="Medium">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M9.02496 7.8853C9.02496 10.3991 7.00463 12.4369 4.51256 12.4369C2.02049 12.4369 0 10.3986 0 7.8853C0 5.37195 2.02033 3.3335 4.51256 3.3335C7.00478 3.3335 9.02496 5.37149 9.02496 7.8853Z" fill="black"/>
+                  <path d="M13.9755 7.88527C13.9755 10.2515 12.9653 12.1704 11.7192 12.1704C10.4731 12.1704 9.46289 10.2515 9.46289 7.88527C9.46289 5.51905 10.4729 3.6001 11.719 3.6001C12.9651 3.6001 13.9753 5.51844 13.9753 7.88527" fill="black"/>
+                  <path d="M15.999 7.88522C15.999 10.0048 15.6438 11.7241 15.2055 11.7241C14.7672 11.7241 14.4121 10.0052 14.4121 7.88522C14.4121 5.76522 14.7673 4.04639 15.2055 4.04639C15.6437 4.04639 15.999 5.76506 15.999 7.88522Z" fill="black"/>
+                </svg>
+                <span class="about-tooltip" role="tooltip"><strong>Medium</strong><span>View profile</span><i class="about-tooltip-line about-tooltip-line--green"></i><i class="about-tooltip-line about-tooltip-line--blue"></i></span>
+              </a>
+              <a class="about-icon-button" href="https://www.behance.net/jaingitesh" target="_blank" rel="noopener noreferrer" aria-label="Behance profile" data-tooltip="Behance">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                  <path d="M8.242 6.96467C8.242 5.73267 7.656 4.822 6.44533 4.48067C7.32867 4.06 7.78933 3.42267 7.78933 2.43133C7.78933 0.476667 6.328 0 4.642 0H0V9.814H4.772C6.56133 9.814 8.242 8.95867 8.242 6.96467ZM2.164 1.67533H4.19467C4.97533 1.67533 5.678 1.894 5.678 2.79667C5.678 3.63 5.13133 3.96533 4.358 3.96533H2.164V1.67533ZM2.16333 8.14733V5.44467H4.522C5.47467 5.44467 6.07733 5.84067 6.07733 6.846C6.07733 7.83733 5.358 8.14733 4.47733 8.14733H2.16333ZM12.5307 10C14.2333 10 15.336 9.23533 15.8667 7.61H14.1387C13.9527 8.21667 13.186 8.53733 12.5913 8.53733C11.444 8.53733 10.8413 7.86733 10.8413 6.72867H15.9833C15.992 6.61333 16 6.48867 16 6.364C16 4.262 14.7667 2.50933 12.5307 2.50933C10.358 2.50933 8.88333 4.13733 8.88333 6.27C8.88267 8.482 10.28 10 12.5307 10ZM12.4693 3.98267C13.4527 3.98267 13.9473 4.55867 14.03 5.50067H10.844C10.9087 4.56667 11.5307 3.98267 12.4693 3.98267ZM10.4447 0.515333H14.4367V1.482H10.4447V0.515333Z" fill="#212121"/>
+                </svg>
+                <span class="about-tooltip" role="tooltip"><strong>Behance</strong><span>View profile</span><i class="about-tooltip-line about-tooltip-line--green"></i><i class="about-tooltip-line about-tooltip-line--blue"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <!-- ===== END VIEW: HOMEPAGE ===== -->
+</main>
+
+<!-- ============ SHARED FOOTER ============ -->
+<footer class="w-full bg-[#FAF9F6] border-t border-[#E5E5DF] py-12 px-6">
+  <div class="max-w-[1280px] mx-auto flex flex-col items-center justify-center gap-8">
+    <!-- <a class="contact-button group" href="#contact" aria-label="Contact Gitesh Jain">
+      <span class="contact-button__label">
+        <span class="contact-button__fill" aria-hidden="true"></span>
+        <span class="contact-button__text">Contact us</span>
+      </span>
+      <span class="contact-button__arrow" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7 17L17 7M9 7H17V15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+    </a> -->
+    <div class="font-mono text-xs tracking-widest uppercase text-[#8E8E8A]">
+      <span>Gitesh Jain</span><span class="mx-2">·</span><span>Product Designer</span>
+    </div>
+  </div>
+</footer>
+
+<script defer src="js/app.js"></script>
+</body>
+</html>
